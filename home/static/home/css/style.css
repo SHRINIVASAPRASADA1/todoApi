@@ -1,0 +1,74 @@
+
+body{
+   
+    background-image: url('https://wallpaper.dog/large/5486500.png');
+    background-repeat: no-repeat;
+    width: 100%;
+   
+    
+}
+.nav{
+    padding: 0.1rem;
+    margin: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+#logo{
+    font-family: 'Water Brush', cursive;
+    color: rgb(0, 0, 0);
+    font-size: 1.7rem;
+}
+
+.nav ul{
+    width: 40%;
+}
+.nav ul li{
+    float: left;
+    margin-left: 5%;
+    list-style: none;
+}
+
+.nav ul li a h4{
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+}
+
+#search-box{
+    background-color: transparent;
+    border-color: rgb(2, 56, 0);
+    outline: none;
+    margin-top: 9%;
+    height: 2rem;
+    width: 13rem;
+}
+
+#search-bt{
+    outline: none;
+    background-color: transparent;
+   border-color: rgb(0, 65, 12);
+    margin-top: 9%;
+    height: 2rem;
+    width: 4rem; 
+}
+.part{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.part h1{
+    padding: 0.4rem;
+    width: 50%;
+    
+    word-wrap: break-word;
+}
+.part div{
+    width: 50%;
+}
+
+.part div img{
+
+    object-fit: contain;
+}
