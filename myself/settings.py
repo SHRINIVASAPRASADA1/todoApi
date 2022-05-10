@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s^cgokt(hgbfmanzn)04vcsxzc_&lm&=q7jjihgb6gctcq6wyh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
+DEBUG = False
+ALLOWED_HOSTS = ['127.0.0.1', 'runhelloworld.herokuapp.com', "https://runhelloworld.herokuapp.com",
+                 "https://www.runhelloworld.herokuapp.com/"]
 
 # Application definition
 
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -129,3 +130,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://192.168.43.33:3000',
 ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn', 'static_root')
