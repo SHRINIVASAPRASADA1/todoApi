@@ -23,8 +23,7 @@ SECRET_KEY = 'django-insecure-s^cgokt(hgbfmanzn)04vcsxzc_&lm&=q7jjihgb6gctcq6wyh
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['127.0.0.1', 'runhelloworld.herokuapp.com', "https://runhelloworld.herokuapp.com",
-                 "https://www.runhelloworld.herokuapp.com/"]
+ALLOWED_HOSTS = ['127.0.0.1', 'https://apirunserver.herokuapp.com','apirunserver.herokuapp.com']
 
 # Application definition
 
@@ -129,8 +128,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     'http://localhost:3000',
     'http://192.168.43.33:3000',
+    'https://apirunserver.herokuapp.com',
 ]
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn', 'static_root')
